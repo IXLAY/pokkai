@@ -18,7 +18,7 @@ function changePassword() {
       .then(response => {
           if (response.data.message === 'Change password') {
               alert("Change password successfully")
-              window.location.href = 'login.html';
+              window.location.href = 'index.html';
           } else {
               location.reload();
           }
@@ -71,7 +71,7 @@ function creatAccount() {
       .then(response => {
           if (response.data.message === 'Successful') {
               alert("Successfully create account")
-              window.location.href = 'login.html';
+              window.location.href = 'index.html';
           } else {
               // location.reload();
           }
